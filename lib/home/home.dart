@@ -14,17 +14,27 @@ class _HomePageState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(221, 0, 0, 0),
-          title: Center(
-            child: Text(
-              "OPENLIFE",
-              style: TextStyle(
-                letterSpacing: 2.0,
-                fontSize: 25,
-                fontWeight: FontWeight.w800,
-                color: Colors.white,
+          backgroundColor: const Color.fromARGB(255, 103, 15, 9),
+          title: Row(
+            children: [
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                child: Text(
+                  "OPENLIFE",
+                  style: TextStyle(
+                    letterSpacing: 1.0,
+                    fontSize: 35,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
         ),
 
